@@ -41,7 +41,7 @@ for ip in list_ip:
                 try:
                         client = paramiko.SSHClient()
                         client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                        client.connect(hostname=ip, port=2322, username=userr, password=password)
+                        client.connect(hostname=ip, port=22, username=userr, password=password)
                         connection = client.invoke_shell()
                         ################### GET HOSTNAME #########################
                         sleep(1)
