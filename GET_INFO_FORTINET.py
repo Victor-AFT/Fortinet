@@ -4,7 +4,7 @@ from paramiko import transport
 import configparser
 from datetime import datetime
 import getpass,subprocess
-from openpyxl import load_workbook, Workbook
+
 userr = 'admin'
 password = '12345'
 
